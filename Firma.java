@@ -1,14 +1,40 @@
 import java.util.ArrayList;
+import java.util.Scanner;
 
 public class Firma {
     public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
         ArrayList<Pracownik> lista = new ArrayList<>();
-        lista.add(new Pracownik());
-        for(int i = 0; i<1;i++){
-            lista.add(new Pracownik());
+        String dzialanie = "1";
+        while (true) {
+            System.out.println("Wyjscie(x),Dodawanie(d),Zwolnij(z),lista(l),Podnieś płacę(p)");
+            dzialanie = input.next();
+            //Przerwanie aplikacji jesli x
+            if (dzialanie.equals("x")) {
+                break;
+            }
+            switch (dzialanie) {
+                case "d":
+                    lista.add(new Pracownik());
+                    break;
+                case "l":
+                    for (Pracownik i : lista) {
+                        System.out.println(i.toString());
+                    }
+                    break;
+                case "z":
+                    System.out.println("Którego usunąć");
+                    int ktorego_usunac = input.nextInt();
+
+                    lista.remove(ktorego_usunac);
+                    break;
+                case "p":
+                    for ()
+                    break;
+                default:
+                    break;
+            }
         }
-        for(Pracownik i : lista) {
-            System.out.println(i.toString());
-        }
+
     }
 }
