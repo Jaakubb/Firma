@@ -29,12 +29,11 @@ public class Firma {
                     lista.remove(ktorego_usunac);
                     break;
                 case "p":
-                    for ()
+                    for (getPlaca :
                     break;
                 default:
                     break;
             }
         }
-
     }
 }

@@ -29,7 +29,7 @@ public class Pracownik {
     public void Adres(String Adres) {
         this.Adres = Adres;
     }
-    public int Placa() {
+    public int getPlaca() {
         return Placa;
     }
     public void Placa(int predkosc_max) {
