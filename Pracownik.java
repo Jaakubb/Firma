@@ -45,5 +45,7 @@ public class Pracownik {
         String tekst = "Imie: " + Imie + "  Nazwisko: " + Nazwisko + "  Adres: " + Adres + "  Płaca: " + Placa;
         return tekst;
     }
-
+public void podnoszenie_placy(int oIle){
+    Placa+=oIle;
+}
 }

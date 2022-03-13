@@ -29,7 +29,11 @@ public class Firma {
                     lista.remove(ktorego_usunac);
                     break;
                 case "p":
-                    for (getPlaca :
+                    System.out.println("Któremu podnieść płacę");
+                    int ktoremu_podniesc = input.nextInt();
+                    System.out.println("O ile");
+                    int oIle = input.nextInt();
+                    lista.get(ktoremu_podniesc).podnoszenie_placy(oIle);
                     break;
                 default:
                     break;
