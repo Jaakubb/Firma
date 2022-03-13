@@ -4,6 +4,7 @@ public class Pracownik {
     private String Imie;
     private String Nazwisko;
     private int Placa;
+    private String Adres;
 
     public Pracownik(){
         Scanner input = new Scanner(System.in);
@@ -11,6 +12,8 @@ public class Pracownik {
         this.Imie = input.next();
         System.out.println("Nazwisko pracownika");
         this.Nazwisko = input.next();
+        System.out.println("Adres pracownika");
+        this.Adres = input.next();
         System.out.println("Płaca pracownika");
         this.Placa = Integer.parseInt(input.next());
     }
@@ -19,6 +22,12 @@ public class Pracownik {
     }
     public void Imie(String Imie) {
         this.Imie = Imie;
+    }
+    public String getAdres() {
+        return Adres;
+    }
+    public void Adres(String Adres) {
+        this.Adres = Adres;
     }
 
     public int Placa() {
@@ -32,10 +41,11 @@ public class Pracownik {
         return Nazwisko;
     }
     public void Nazwisko(String Nazwisko) {
-        this.Imie = Imie;
+        this.Nazwisko = Nazwisko;
     }
     public String toString() {
-        String tekst = "Imie: " + Imie + "  Nazwisko: " + Nazwisko + "  Płaca: " + Placa;
+        String tekst = "Imie: " + Imie + "  Nazwisko: " + Nazwisko + "  Adres: " + Adres + "  Płaca: " + Placa;
         return tekst;
     }
+
 }
