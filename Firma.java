@@ -7,7 +7,7 @@ public class Firma {
         ArrayList<Pracownik> lista = new ArrayList<>();
         String dzialanie = "1";
         while (true) {
-            System.out.println("Wyjscie(x),Dodawanie(d),Zwolnij(z),lista(l),Podnieś płacę(p)");
+            System.out.println("Wyjscie(x),Dodawanie(d),Zwolnij(z),lista(l),Podnieś płacę(p)Suma wydatków(s)");
             dzialanie = input.next();
             //Przerwanie aplikacji jesli x
             if (dzialanie.equals("x")) {
@@ -34,6 +34,9 @@ public class Firma {
                     System.out.println("O ile");
                     int oIle = input.nextInt();
                     lista.get(ktoremu_podniesc).podnoszenie_placy(oIle);
+                    break;
+                case "s":
+                    lista.add(new Pracownik());
                     break;
                 default:
                     break;
