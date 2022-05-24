@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class Pracownik {
     private String Imie;
     private String Nazwisko;
-    private int Placa;
+    public int Placa;
     private String Adres;
 
     public Pracownik(){
@@ -48,4 +48,5 @@ public class Pracownik {
 public void podnoszenie_placy(int oIle){
     Placa+=oIle;
 }
+
 }
