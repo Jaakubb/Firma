@@ -35,7 +35,7 @@ public class Firma {
                     lista.get(ktoremu_podniesc).podnoszenie_placy(oIle);
                     break;
                 case "s":
-
+                    System.out.println(lista.get(3));
                     break;
                 default:
                     break;
