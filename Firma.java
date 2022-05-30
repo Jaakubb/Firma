@@ -35,8 +35,9 @@ public class Firma {
                     lista.get(ktoremu_podniesc).podnoszenie_placy(oIle);
                     break;
                 case "s":
-                    int place = input.nextInt();
-                    System.out.println(lista.get(3).sumowanie_placy(place));
+                    for (Pracownik i : lista) {
+                        System.out.println(i.Placa);
+                    }
                     break;
                 default:
                     break;

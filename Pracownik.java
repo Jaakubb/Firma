@@ -48,6 +48,6 @@ public class Pracownik {
 public void podnoszenie_placy(int oIle){
     Placa+=oIle;
 }
-public String sumowanie_placy(int place){Placa(3);}
+
 
 }
