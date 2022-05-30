@@ -36,7 +36,13 @@ public class Firma {
                     break;
                 case "s":
                     for (Pracownik i : lista) {
-                        System.out.println(i.Placa);
+                        int suma_plac = 0;
+                        for (Pracownik b : lista) {
+                            suma_plac += b.getPlaca();
+                        }
+                        System.out.println(suma_plac);
+                        break;
+
                     }
                     break;
                 default:

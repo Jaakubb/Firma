@@ -50,4 +50,5 @@ public void podnoszenie_placy(int oIle){
 }
 
 
+
 }
